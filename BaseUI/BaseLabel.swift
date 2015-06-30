@@ -9,5 +9,13 @@
 import UIKit
 
 class BaseLabel: NSObject {
-   
+    func initNewLabel(superView:UIView?){
+        print("baseLabel!!!");
+        let label = UILabel();
+        label.frame = CGRectMake(10,50, 100, 30);
+        label.backgroundColor = UIColor.grayColor();
+        label.textAlignment = NSTextAlignment.Center;
+        label.text = "baseLabel";
+        superView?.addSubview(label);
+    }
 }
